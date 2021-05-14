@@ -34,7 +34,7 @@ export const projectsData = [
     title: 'Yarr-Harr!',
     info: 'Spring 2021',
     info2:
-      'A PC game made by Unity. It is a 3D platformer centered around the usage of a grappling hook. Each of us in the project group works on prefabs which could be interactive or dangerous, while I work more on the sounds, the system of managing game data and a styled UI.',
+      'Yarr-Harr! is a PC game made by Unity. It is a 3D platformer centered around the usage of a grappling hook. Each of us in the project group works on prefabs which could be interactive or dangerous, while I work more on the sounds, the system of managing game data and a styled UI.',
     url: '',
     repo: 'https://github.com/Maximillianmus/DH2650-project', // if no repo, the button will not show up
   },
@@ -44,7 +44,7 @@ export const projectsData = [
     title: 'Sound Forest by The Sea',
     info: 'Spring 2021',
     info2:
-      'Interactive installation with sounds and lights based on Sound Forest developed by KTH. Different from the original one, our project focuses more on a fine-grained interaction and an immersive soundscape based on the raw sound input and distance sensor. It was built by mainly three parts: the contoller software programmed by Python, Max/MSP and SuperCollider, Arduino receiving OSC and DMX data to trigger the third part - the speakers and LED lights.',
+      'Sound Forest by The Sea is an interactive installation with sounds and lights based on Sound Forest developed by KTH. Different from the original one, our project focuses more on a fine-grained interaction and an immersive soundscape based on the raw sound input and distance sensor. It was built by mainly three parts: the contoller software programmed by Python, Max/MSP and SuperCollider, Arduino receiving OSC and DMX data to trigger the third part - the speakers and LED lights.',
     url: 'https://vimeo.com/523815674',
   },
   {
@@ -63,7 +63,7 @@ export const projectsData = [
     title: 'Speech War',
     info: 'Autumn 2020',
     info2:
-      'A game made for multimodal study to compare keyboard input and speech input. It turned out that people showed more interests on speech mode while most people were more familiar with the keyboards.',
+      'Speech War is a game made for multimodal study to compare keyboard input and speech input. It turned out that people showed more interests on speech mode while most people were more familiar with the keyboards.',
     url: 'https://vimeo.com/500989169',
     repo: 'https://github.com/kiki0805/SpeechWar', // if no repo, the button will not show up
   },
@@ -73,7 +73,7 @@ export const projectsData = [
     title: 'SiTi - Simplified Travelling',
     info: 'Autumn 2020',
     info2:
-      'An app design for international travel during pandemic period. It was an attempt on the general process for interaction design: from brainstorm to final evaluation with a prototype and verification of user requirements.',
+      'SiTi is an app design for international travel during pandemic period. It was an attempt on the general process for interaction design: from brainstorm to final evaluation with a prototype and verification of user requirements.',
     url: 'https://drive.google.com/file/d/1x4LxXVwRo9D-L-mKNqHqOORxkGzC8pkY/view?usp=sharing',
     repo:
       'https://www.figma.com/proto/Rb2sioTJjjB6DGFf67FndG/Design?node-id=322%3A505&scaling=scale-down', // if no repo, the button will not show up
