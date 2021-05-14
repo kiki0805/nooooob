@@ -9,7 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: 'Hello, my name is',
+  title: 'Hi, my name is',
   name: 'Zezhe Huang',
   subtitle: `I'm a developer.`,
   cta: 'Know more',
@@ -18,7 +18,7 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: `I'm a master student majored Interactive Media Technology (sonic track) at KTH, while my undergrate major is Computer Science.`,
+  paragraphOne: `I'm studying in Interactive Media Technology (sonic track) master program at KTH, while my undergrate major is Computer Science.`,
   paragraphTwo: `I worked as a full-stack engineer, now I'm learning more technologies in media, especially in sounds, and practicing more about System Design in my spare time.`,
   paragraphThree:
     'Besides most of the entertainment activities on the computer such as playing video games, listening to music, and watching TV series, what I enjoy most as hobbies are tennis and hiking XD',
