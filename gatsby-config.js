@@ -6,10 +6,11 @@ module.exports = {
       summary: `who is totally a nooooob.`,
     },
     description: `A personal site.`,
-    siteUrl: `http://zezheh.com/`,
+    siteUrl: `https://zezheh.com/`,
     social: {
       github: `kiki0805`,
     },
+    portfolio: `https://portfolio.zezheh.com/`,
   },
   plugins: [
     `gatsby-plugin-image`,

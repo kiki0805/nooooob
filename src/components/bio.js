@@ -21,6 +21,7 @@ const Bio = () => {
           social {
             github
           }
+          portfolio
         }
       }
     }
@@ -28,6 +29,7 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
+  const portfolioUrl = data.site.siteMetadata?.portfolio
 
   return (
     <div className="bio">
@@ -43,7 +45,9 @@ const Bio = () => {
       />
       {author?.name && (
         <p style={{margin: `auto 0.5rem`}}>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Written by <strong>{author.name}</strong> {author?.summary || null} 
+          <br/>
+          More on <a href={portfolioUrl}>Portfolio</a> page.
         </p>
       )}
     </div>
