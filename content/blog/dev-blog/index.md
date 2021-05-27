@@ -50,3 +50,5 @@ Tutories I took:
 - Pause menu: https://www.youtube.com/watch?v=JivuXdrIHK0&t=435s
 
 
+## Refined Ideas
+

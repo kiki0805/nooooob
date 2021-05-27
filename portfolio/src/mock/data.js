@@ -34,7 +34,7 @@ export const projectsData = [
     info: 'Spring 2021',
     info2:
       'Yarr-Harr! is a PC game made by Unity. It is a 3D platformer centered around the usage of a grappling hook. Each of us in the project group works on prefabs which could be interactive or dangerous, while I work more on the sounds, the system of managing game data and a styled UI.',
-    url: '',
+    url: 'https://orrhsu.wixsite.com/yarr-harr',
     repo: 'https://github.com/Maximillianmus/DH2650-project', // if no repo, the button will not show up
   },
   {
