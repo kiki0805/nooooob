@@ -90,7 +90,11 @@ Also, we didn't want the saving more limited at specific locations. For this pur
 
 The goal of our game was also a problem for us. How could we define success and failure? A simple solution was to track the count of explored chests, which could be seen at the top left corner. There are several chests in each level, and each level requires a certain number of explored chests to unlock. There is no punishment if the character dies. Instead, a game over screen will appear to provide the player options to try again or gto level hub and select another level. To make the whole game connected, make each single element work together, was the most part of what I've done.
 
+![gameover.png](gameover.png)
+
 Let's back to the level hub. The map of the original level hub was based on a plain image, which was not good enough for us. In the later phase, we rebuilt almost the whole level hub scene. Drew the terrains, decorated it, applied navigation mesh agent on it and detected the collision of the pirate ship and the invisible level points, which were placed at the islands' docks. The collision will trigger a popup of corresponding level information, which tells the player how many chests are required to unlock the level, determining the activation of the Play button.
+
+![levelhub.png](levelhub.png)
 
 What's more, although most of the things could be used directly in the scenes, some models were just dumb objects without any interaction. Let's say, the chests. To enable the opening animation when the player opens a chest, I reconfigured the animation controller with trigger conditions, so that the condition could be set in the script of interaction.
 
