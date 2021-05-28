@@ -23,7 +23,7 @@ Useful links:
 - Game genres: https://www.gamedesigning.org/gaming/video-game-genres/
 - Game themes: https://backtogames.com/pages/game-themes
 
-In addition to the game itself, we also talked about the technical stuff, which was finally determined to be a combination of Unity, Git and Blender. We all have more or less experience of making a game with different frameworks or engines, but it sould be quicker for us to use a widely-used one because of tons of accessible [learning resources](https://learn.unity.com/) and [game assets](https://assetstore.unity.com/).
+In addition to the game itself, we also talked about the technical stuff, which was finally determined to be a combination of Unity, Git and Blender. We all have more or less experience of making a game with different frameworks or engines, but it should be quicker for us to use a widely-used one because of tons of accessible [learning resources](https://learn.unity.com/) and [game assets](https://assetstore.unity.com/).
 
 Finally, we had our idea with a background of pirates - ***Yarr-Harr!***. (There is Scandinavia, isn't it? :D) It would be rouge-like first-person game with the main mechanics of harpooning, which is possible to grasp something, pull the character towards the grasped thing, as well as attack enemies. To enrich the game, types of terrains, enemies, chests and types of levels (exploring combats or puzzles) would be designed.
 
@@ -35,16 +35,16 @@ Finally, we had our idea with a background of pirates - ***Yarr-Harr!***. (There
 
 Before the proposal presentation, we already had a simple prototype as shown above with cubes, trees, the harpoon and a cylinder as the character. So when I got started, I picked the missing part - the level hub but it played an important role as a connection among different level scenes.
 
-With free models and map image found online, I put a plane with the image as texture, and put the boat model so that the player can control it to choose different levels. In technical aspect, it was not quite difficult to implement with the help of tutorials, which inspired me to create a simple sphere as a prefab for the level pins. Indicating user inputs for movements and level selections, the level hub could work with the minimal implementation.
+With free models and a map image found online, I put a plane with the image as texture, and put the boat model so that the player can control it to choose different levels. In the technical aspect, it was not quite difficult to implement with the help of tutorials, which inspired me to create a simple sphere as a prefab for the level pins. Indicating user inputs for movements and level selections, the level hub could work with minimal implementation.
 
 ![level-hub](./level-hub.png)
 
-Then we had all the basic seperate scenes: basic puzzle scene, a level hub scene. To cascade scenes together, at lease we needed:
-- a main menu to start with,
+Then we had all the basic separate scenes: a basic puzzle scene, a level hub scene. To cascade scenes together, at least we needed:
+- the main menu to start with,
 - loading scenes from the level hub, 
 - and a pause menu in level scenes.
 
-It was nice that we could easily find related tutorials to follow and create simple menus without fancy styles. Game starts with the main menu, which leads to further optional settings, the level hub or quitting the game. For the pause menu, a game object with scripts detected the input of <kbd>Esc</kbd> to transit to the transparent menu, which allows players to go back to the level hub or the main menu.
+It was nice that we could easily find related tutorials to follow and create simple menus without fancy styles. The game starts with the main menu, which leads to further optional settings, the level hub or quitting the game. For the pause menu, a game object with scripts detected the input of <kbd>Esc</kbd> to transit to the transparent menu, which allows players to go back to the level hub or the main menu.
 
 Tutories I took:
 - Level selection: https://bigbad.xyz/blog/how-to-make-a-level-select-like-in-super-mario-world
@@ -56,21 +56,21 @@ Tutories I took:
 
 Basically, some proper menus, a tutorial level, transitions among different scenes, music and a save system were agreed and written down in the task list. With the basic flow of the game, what we had to think about is how the level should be designed. Should we provide combat with enemies, puzzles or a mini fishing game to make the progress more relaxing? We couldn't make a decision immediately, so we just followed whatever ideas we had and implemented them.
 
-Some of us started working on the tutorial level, which helps players to get familiar with the grappling mechanics, while others created lots of models and prefab like greens, bridges, rocks, dangers, the interatable buttons and orbs, etc. 
+Some of us started working on the tutorial level, which helps players to get familiar with the grappling mechanics, while others created lots of models and prefab like greens, bridges, rocks, dangers, the interactable buttons and orbs, etc. 
 
 ![tutoral.png](./tutorial.png)
 
-(The above screenshot is the final version of tutorial level.)
+(The above screenshot is the final version of the tutorial level.)
 
 Interestingly, the cannon I made with the ability to aim the player automatically became my largest challenge in the tutorial level. It sucks but it is also sweet :)
 
-Before our modified cannon model was finished, I found a lot of free cannon models in [this asset](https://assetstore.unity.com/packages/3d/props/weapons/stylish-cannon-pack-17), which is super useful for game developing beginners who couldn't make their own models. At first, I had no idea about how I could make a cannon, which could fire and cause damages. Progress were made after I had a look at an [asset](https://assetstore.unity.com/packages/3d/environments/fantasy/goblin-cannon-145437) with the similar function as we want.
+Before our modified cannon model was finished, I found a lot of free cannon models in [this asset](https://assetstore.unity.com/packages/3d/props/weapons/stylish-cannon-pack-17), which is super useful for game developing beginners who couldn't make their own models. At first, I had no idea about how I could make a cannon, which could fire and cause damages. Progress was made after I had a look at an [asset](https://assetstore.unity.com/packages/3d/environments/fantasy/goblin-cannon-145437) with the similar function as we want.
 
 There is an invisible zone in the cannon prefab, within which the character will be tracked and shot by cannon bullets. 
 
 ![cannon.png](./cannon.png)
 
-For the save system, even though I had an initial idea of how the data should be structured, I never wrote similar codes in C-sharp. The tutorials came again. The saving and loading could work everywhere with static functions. Similarily, to help manage all music in a game object, which won't be destroyed, scripts of a general manager was needed. With each scene loaded, the configuration of background music should be detected and played automatically (if existed). The part of audio manager is common on games, so I directly modified the version of Brackeys to our current one.
+For the save system, even though I had an initial idea of how the data should be structured, I never wrote similar codes in C-sharp. The tutorials came again. The saving and loading could work everywhere with static functions. Similarly, to help manage all music in a game object, which won't be destroyed, scripts of a general manager were needed. With each scene loaded, the configuration of background music should be detected and played automatically (if existed). The part of the audio manager is common on games, so I directly modified the version of Brackeys to our current one.
 
 YouTube tutorials:
 
@@ -80,20 +80,24 @@ YouTube tutorials:
 
 ## Connect and Refine Everything
 
-We finished most of key functions at the intermediate stage. However, lights were monotonous and GUIs were too simple. The player even had to evoke pause menu to save progress, which could be done everywhere :/ 
+We finished most of the key functions at the intermediate stage. However, lights were monotonous and GUIs were too simple. The player even had to evoke a pause menu to save progress, which could be done everywhere :/ 
 
-Because I created the original basic (naked) UI of menus, absolutely I had the respondibility to refine it. Considering that it could be tedious task to build a nice button with a tons of decoration: border, shader, lighting, hover effects, click effects, sound effects, etc., I decided to use a GUI package, which was [Clean & Minimalist GUI Pack](https://assetstore.unity.com/packages/2d/gui/clean-minimalist-gui-pack-75123). Everything became much direct that what we needed to do was to define the callback of click event, decide a theme palette and move the GUI elements to proper positions. The package was super nice that we could even use a scene transition script built in it. To utilize complex elements like the progress bar, I wrote some public functions to control the transform of the game object so that we could simply call it to set the percentage of progress bar, which was used in saving progress (hold E 2 seconds save). 
+Because I created the original basic (naked) UI of menus, absolutely I had the responsibility to refine it. Considering that it could be a tedious task to build a nice button with tons of decoration: border, shader, lighting, hover effects, click effects, sound effects, etc., I decided to use a GUI package, which was [Clean & Minimalist GUI Pack](https://assetstore.unity.com/packages/2d/gui/clean-minimalist-gui-pack-75123). Everything became much direct that what we needed to do was to define the callback of click event, decide a themed palette and move the GUI elements to proper positions. The package was super nice that we could even use a scene transition script built in it. To utilize complex elements like the progress bar, I wrote some public functions to control the transform of the game object so that we could simply call it to set the percentage of the progress bar, which was used in saving progress (hold E 2 seconds save). 
 
 ![progress-bar.png](./progress-bar.png)
 
-Also, we didn't want the saving more limited at specific locations. For this purpose, the particle system built in Unity - Visual Effect Graph came in. I really liked it since it was super easy to edit the particles with a bunch of properties: textures, randomization, colors... Our save point was born from the particle system.
+Also, we didn't want the saving more limited at specific locations. For this purpose, the particle system built in Unity - Visual Effect Graph came in. I really liked it since it was super easy to edit the particles with a bunch of properties: textures, randomization, colors... Our savepoint was born from the particle system.
 
-What's more, although most of things could be used directly in the scenes, some models were just dumb objects without any interaction. Let's say, the chests. To enable the opening animation when the player opens a chest, I reconfigured the animation controller with trigger conditions, so that the condition could be set in the script of interaction.
+The goal of our game was also a problem for us. How could we define success and failure? A simple solution was to track the count of explored chests, which could be seen at the top left corner. There are several chests in each level, and each level requires a certain number of explored chests to unlock. There is no punishment if the character dies. Instead, a game over screen will appear to provide the player options to try again or gto level hub and select another level. To make the whole game connected, make each single element work together, was the most part of what I've done.
+
+Let's back to the level hub. The map of the original level hub was based on a plain image, which was not good enough for us. In the later phase, we rebuilt almost the whole level hub scene. Drew the terrains, decorated it, applied navigation mesh agent on it and detected the collision of the pirate ship and the invisible level points, which were placed at the islands' docks. The collision will trigger a popup of corresponding level information, which tells the player how many chests are required to unlock the level, determining the activation of the Play button.
+
+What's more, although most of the things could be used directly in the scenes, some models were just dumb objects without any interaction. Let's say, the chests. To enable the opening animation when the player opens a chest, I reconfigured the animation controller with trigger conditions, so that the condition could be set in the script of interaction.
 
 
 ## Final Delivery
 
-All the levels were polished at the last minutes, which means we had to test through the whole game in a short time. Fortunately, almost found bugs were the one easy to solve.
+All the levels were polished at the last minute, which means we had to test through the whole game in a short time. Fortunately, almost found bugs were the one easy to solve, such as the color of particles, bake settings, credits information... Despite the fixed details were not serious problems, they were important parts to enhance the gameplay experience and make our game more complete.
 
 ![main.png](./main.png)
 
@@ -103,8 +107,10 @@ All the levels were polished at the last minutes, which means we had to test thr
 - Unity assets flexibly helped a lot.
 - YouTube tutorials helped a lot. Thank [Brackeys](https://www.youtube.com/c/Brackeys)!
 - It would be cool if a game developer can also model and make music. Or, if the team is able to do. XD
-- Developing complete stuff working individually in every stage guaranteed the progress and integrality, even though we had to keep changing and improving details.
+- Developing complete stuff working individually in every stage guaranteed progress and integrality, even though we had to keep changing and improving details.
 
 *Who knows the handsome pirate captain is actually a cylinder? 😎*
 
 ![captain.png](./captain.png)
+
+Our website: https://orrhsu.wixsite.com/yarr-harr
