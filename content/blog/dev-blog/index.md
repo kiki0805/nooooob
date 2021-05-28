@@ -1,17 +1,19 @@
 ---
 title: DH2650 Development Blog
-date: "2021-04-15"
+date: "2021-05-28"
 description: "Development blog for the project in KTH course DH2650 Computer Game Design."
 ---
 
-Members of group 4:
-- Erik Westergren ewesterg@kth.se
-- Kok Siang Ng ksng@kth.se
-- Max Truedsson maxtru@kth.se 
-- Ao Xu aox@kth.se
-- Zezhe Huang zezhe@kth.se
+*It could be a bit bullshit but also kind of records.*
 
-## Introduction
+Members of group 4:
+- Erik Westergren   ewesterg@kth.se
+- Kok Siang Ng      ksng@kth.se
+- Max Truedsson     maxtru@kth.se 
+- Ao Xu             aox@kth.se
+- Zezhe Huang       zezhe@kth.se
+
+## Brainstorms
 
 We are going to design a game with a proper Game Design Document(GDD).
 
@@ -50,5 +52,59 @@ Tutories I took:
 - Pause menu: https://www.youtube.com/watch?v=JivuXdrIHK0&t=435s
 
 
-## Refined Ideas
+## Just Do It
 
+Basically, some proper menus, a tutorial level, transitions among different scenes, music and a save system were agreed and written down in the task list. With the basic flow of the game, what we had to think about is how the level should be designed. Should we provide combat with enemies, puzzles or a mini fishing game to make the progress more relaxing? We couldn't make a decision immediately, so we just followed whatever ideas we had and implemented them.
+
+Some of us started working on the tutorial level, which helps players to get familiar with the grappling mechanics, while others created lots of models and prefab like greens, bridges, rocks, dangers, the interatable buttons and orbs, etc. 
+
+![tutoral.png](./tutorial.png)
+
+(The above screenshot is the final version of tutorial level.)
+
+Interestingly, the cannon I made with the ability to aim the player automatically became my largest challenge in the tutorial level. It sucks but it is also sweet :)
+
+Before our modified cannon model was finished, I found a lot of free cannon models in [this asset](https://assetstore.unity.com/packages/3d/props/weapons/stylish-cannon-pack-17), which is super useful for game developing beginners who couldn't make their own models. At first, I had no idea about how I could make a cannon, which could fire and cause damages. Progress were made after I had a look at an [asset](https://assetstore.unity.com/packages/3d/environments/fantasy/goblin-cannon-145437) with the similar function as we want.
+
+There is an invisible zone in the cannon prefab, within which the character will be tracked and shot by cannon bullets. 
+
+![cannon.png](./cannon.png)
+
+For the save system, even though I had an initial idea of how the data should be structured, I never wrote similar codes in C-sharp. The tutorials came again. The saving and loading could work everywhere with static functions. Similarily, to help manage all music in a game object, which won't be destroyed, scripts of a general manager was needed. With each scene loaded, the configuration of background music should be detected and played automatically (if existed). The part of audio manager is common on games, so I directly modified the version of Brackeys to our current one.
+
+YouTube tutorials:
+
+- SAVE & LOAD SYSTEM in Unity https://www.youtube.com/watch?v=XOjd_qU2Ido&t=873s
+- Introduction to AUDIO in Unity https://www.youtube.com/watch?v=6OT43pvUyfY&t=641s
+
+
+## Connect and Refine Everything
+
+We finished most of key functions at the intermediate stage. However, lights were monotonous and GUIs were too simple. The player even had to evoke pause menu to save progress, which could be done everywhere :/ 
+
+Because I created the original basic (naked) UI of menus, absolutely I had the respondibility to refine it. Considering that it could be tedious task to build a nice button with a tons of decoration: border, shader, lighting, hover effects, click effects, sound effects, etc., I decided to use a GUI package, which was [Clean & Minimalist GUI Pack](https://assetstore.unity.com/packages/2d/gui/clean-minimalist-gui-pack-75123). Everything became much direct that what we needed to do was to define the callback of click event, decide a theme palette and move the GUI elements to proper positions. The package was super nice that we could even use a scene transition script built in it. To utilize complex elements like the progress bar, I wrote some public functions to control the transform of the game object so that we could simply call it to set the percentage of progress bar, which was used in saving progress (hold E 2 seconds save). 
+
+![progress-bar.png](./progress-bar.png)
+
+Also, we didn't want the saving more limited at specific locations. For this purpose, the particle system built in Unity - Visual Effect Graph came in. I really liked it since it was super easy to edit the particles with a bunch of properties: textures, randomization, colors... Our save point was born from the particle system.
+
+What's more, although most of things could be used directly in the scenes, some models were just dumb objects without any interaction. Let's say, the chests. To enable the opening animation when the player opens a chest, I reconfigured the animation controller with trigger conditions, so that the condition could be set in the script of interaction.
+
+
+## Final Delivery
+
+All the levels were polished at the last minutes, which means we had to test through the whole game in a short time. Fortunately, almost found bugs were the one easy to solve.
+
+![main.png](./main.png)
+
+
+## GOODBYE, YARR-HARR!
+
+- Unity assets flexibly helped a lot.
+- YouTube tutorials helped a lot. Thank [Brackeys](https://www.youtube.com/c/Brackeys)!
+- It would be cool if a game developer can also model and make music. Or, if the team is able to do. XD
+- Developing complete stuff working individually in every stage guaranteed the progress and integrality, even though we had to keep changing and improving details.
+
+*Who knows the handsome pirate captain is actually a cylinder? 😎*
+
+![captain.png](./captain.png)
