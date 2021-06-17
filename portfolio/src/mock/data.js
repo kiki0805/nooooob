@@ -29,6 +29,15 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'datatonism.png',
+    title: 'Datatonism',
+    info: 'Spring 2021',
+    info2:
+      'Datatonism is a digital emulation of the Dataton System 3000 – a Swedish electronic music synthesizer. Designed by Björn Sandlund in the 1970s, the system consists of brick-shaped modules that connect to each other sideways like Legos. As final project for the course DT2213 Musical Communication and Music Technology given at KTH Royal Institute of Technology, we have re-created Sandlunds system in a digital context. The name and main patch is derived from Automatonism, a modular synth system created for Pure Data.',
+    repo: 'https://github.com/kx-shi/Datatonism',
+  },
+  {
+    id: nanoid(),
     img: 'yarr-harr.png',
     title: 'Yarr-Harr!',
     info: 'Spring 2021',

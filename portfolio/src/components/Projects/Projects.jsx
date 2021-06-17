@@ -49,14 +49,16 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
@@ -64,6 +66,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                           className="cta-btn text-color-main"
                           href={repo}
+                          style={url ? {} : { paddingLeft: 0 }}
                         >
                           Source Code
                         </a>
