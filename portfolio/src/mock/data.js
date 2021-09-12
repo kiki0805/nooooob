@@ -17,10 +17,10 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'profile2.jpg',
   paragraphOne: `📚 Interactive Media Technology - Computer Science`,
-  paragraphTwo: `💼 Sonic interaction, system design, and full-stack development`,
-  paragraphThree: '❤️ Games, music, tennis and hiking XD',
+  paragraphTwo: `💼 Human-computer interaction, system design, and full-stack development`,
+  paragraphThree: '❤️ Tennis, hiking, music and games XD',
   paragraphFour: '😊 Enjoy the digital world and the natural world!',
   // resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
@@ -29,7 +29,17 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'datatonism.png',
+    img: 'interface.png',
+    title: 'Rage Pad',
+    info: 'Spring 2021',
+    info2:
+      'Rage pad can be seen as a normal instrument just as other common ones. There is no special timbre for the sound generation but three sound effects (slide, tremolo, and vibrato), which can be triggered with the control inputs. Besides, the sound effects, the basic two properties can be controlled on the user side are the frequency and duration (or, release time if the sound is sustained).',
+    url: 'https://youtu.be/HMCYziR0LqE',
+    repo: 'https://github.com/kiki0805/rage-pad',
+  },
+  {
+    id: nanoid(),
+    img: 'datatonism.JPG',
     title: 'Datatonism',
     info: 'Spring 2021',
     info2:
@@ -54,6 +64,7 @@ export const projectsData = [
     info2:
       'Sound Forest by The Sea is an interactive installation with sounds and lights based on Sound Forest developed by KTH. Different from the original one, our project focuses more on a fine-grained interaction and an immersive soundscape based on the raw sound input and distance sensor. It was built by mainly three parts: the contoller software programmed by Python, Max/MSP and SuperCollider, Arduino receiving OSC and DMX data to trigger the third part - the speakers and LED lights.',
     url: 'https://vimeo.com/523815674',
+    repo: 'https://drive.google.com/file/d/19PHun1VDFRr2SQkJGBjcRA_ixVBAFfob/view?usp=sharing',
   },
   {
     id: nanoid(),
@@ -62,8 +73,8 @@ export const projectsData = [
     info: 'Spring 2021',
     info2:
       'Steamind is a tool for visualizing games from your own Steam library as well as other games from Steam that might suit your interests. D3.js is used to realize the visualization while Flask is used to serve the data (retrieving and filtering) scraped by Scrapy.',
-    url: 'https://gits-15.sys.kth.se/pages/karshi/SteamViz/',
-    repo: 'https://gits-15.sys.kth.se/karshi/SteamViz', // if no repo, the button will not show up
+    url: 'https://vimeo.com/526182623',
+    repo: 'https://github.com/kiki0805/Steamind', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -85,6 +96,16 @@ export const projectsData = [
     url: 'https://drive.google.com/file/d/1x4LxXVwRo9D-L-mKNqHqOORxkGzC8pkY/view?usp=sharing',
     repo:
       'https://www.figma.com/proto/Rb2sioTJjjB6DGFf67FndG/Design?node-id=322%3A505&scaling=scale-down', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'HCIMouse.png',
+    title: 'Turning Mice into Tangibles',
+    info: 'Submission to CHI 2022',
+    info2:
+      'Centaur, is a system enables touch interaction for non-touch screen computers, e.g., most desktop computers. Centaur uses optical mice as an agent to perform touch actions. It supports tapping, dragging and multi-people touching, which brings new opportunities to conventional mouse-based interaction. Results show the location resolution is 12mm2, the positioning latency is 0.41 s on average and 0.76 s for 99% cases.',
+    url: 'https://youtu.be/BysZTkLBfgo',
+    repo: 'https://github.com/kiki0805/HCI-Mouse',
   },
 ];
 
