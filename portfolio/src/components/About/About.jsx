@@ -4,10 +4,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import phdCV from '../../static/hzz_cv_hci_phd.pdf';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -51,18 +52,11 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
+                <span className="d-flex mt-3">
+                  <a className="cta-btn cta-btn--resume" href={phdCV} download>
+                    Curriculum Vitae
+                  </a>
+                </span>
               </div>
             </Fade>
           </Col>

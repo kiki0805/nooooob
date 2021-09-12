@@ -22,11 +22,26 @@ export const aboutData = {
   paragraphTwo: `💼 Human-computer interaction, system design, and full-stack development`,
   paragraphThree: '❤️ Tennis, hiking, music and games XD',
   paragraphFour: '😊 Enjoy the digital world and the natural world!',
-  // resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'big-data.png',
+    title: 'Big Data in Media Technology',
+    info: 'Fall 2021, ONGOING',
+    info2:
+      'Digital media information is streaming in from all sorts of sensors, instruments, and simulations, overwhelming our capacity to organize, analyze, and store it. We need powerful new tools to analyze, mine, visualize,  and manipulate big-media data and must rethink our whole approach to data-intensive science as the fourth scientific paradigm.',
+  },
+  {
+    id: nanoid(),
+    img: 'sound.png',
+    title: 'Music Informatics',
+    info: 'Fall 2021, ONGOING',
+    info2:
+      'Learn about how music content at different levels of abstraction can be expressed and compared with distinctive features; ways to model music data by means of statistical machine learning methods; and how to evaluate models of music data in the lab and in real life.',
+  },
   {
     id: nanoid(),
     img: 'interface.png',
@@ -80,7 +95,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'speech-war.png',
     title: 'Speech War',
-    info: 'Autumn 2020',
+    info: 'Fall 2020',
     info2:
       'Speech War is a game made for multimodal study to compare keyboard input and speech input. It turned out that people showed more interests on speech mode while most people were more familiar with the keyboards.',
     url: 'https://vimeo.com/500989169',
@@ -90,10 +105,10 @@ export const projectsData = [
     id: nanoid(),
     img: 'SiTi.png',
     title: 'SiTi - Simplified Travelling',
-    info: 'Autumn 2020',
+    info: 'Fall 2020',
     info2:
       'SiTi is an app design for international travel during pandemic period. It was an attempt on the general process for interaction design: from brainstorm to final evaluation with a prototype and verification of user requirements.',
-    url: 'https://drive.google.com/file/d/1x4LxXVwRo9D-L-mKNqHqOORxkGzC8pkY/view?usp=sharing',
+    url: 'https://youtu.be/tqSjC6FmsmY',
     repo:
       'https://www.figma.com/proto/Rb2sioTJjjB6DGFf67FndG/Design?node-id=322%3A505&scaling=scale-down', // if no repo, the button will not show up
   },
