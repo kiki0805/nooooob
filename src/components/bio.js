@@ -45,7 +45,9 @@ const Bio = () => {
       />
       {author?.name && (
         <p style={{margin: `auto 0.5rem`}}>
-          Written by <strong>{author.name}</strong> {author?.summary || null} 
+          Written by <strong>{author.name}</strong> 
+          <br />
+          {author?.summary || null} 
           <br/>
           More on <a href={portfolioUrl}>Portfolio</a> page.
         </p>

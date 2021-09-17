@@ -152,7 +152,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/zezhe-huang-b8844b121/',
+      url: 'https://www.linkedin.com/in/zezhe-huang/',
     },
   ],
 };

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `nooooob Blog`,
+    title: `Atypical Developer`,
     author: {
       name: `Zezhe Huang`,
-      summary: `who is totally a nooooob.`,
+      summary: `Why the ocean is blue? Fish: "blue...o○...blue....（\´-\`）.｡oO"`,
     },
     description: `A personal site.`,
     siteUrl: `https://zezheh.com/`,
