@@ -28,19 +28,30 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'big-data.png',
-    title: 'Big Data in Media Technology',
-    info: 'Fall 2021, ONGOING',
-    info2:
-      'Digital media information is streaming in from all sorts of sensors, instruments, and simulations, overwhelming our capacity to organize, analyze, and store it. We need powerful new tools to analyze, mine, visualize,  and manipulate big-media data and must rethink our whole approach to data-intensive science as the fourth scientific paradigm.',
+    img: 'oculus.jpg',
+    title: 'Future of Work',
+    info: 'Winter 2021, ONGING',
+    info2: 'A VR implementation for visual coding.',
   },
   {
     id: nanoid(),
-    img: 'sound.png',
-    title: 'Music Informatics',
-    info: 'Fall 2021, ONGOING',
+    img: 'framework.png',
+    title: 'Combined Machine Learning Techniques',
+    info: 'Fall 2021',
     info2:
-      'Learn about how music content at different levels of abstraction can be expressed and compared with distinctive features; ways to model music data by means of statistical machine learning methods; and how to evaluate models of music data in the lab and in real life.',
+      "This project explored how a combined model can be used to perform sentiment analysis classification on data from social media to predict user's mood throughout the week. We trained an enhanced model by combining Convolutional Neural Network and an ensemble model of Naive Bayes Network, Support Vector Machine and Logistic Regression for the task.",
+    repo: 'https://gist.github.com/kiki0805/d1dec1de537843bc9a340e7e81319bba',
+  },
+  {
+    id: nanoid(),
+    img: 'Pipeline.png',
+    title: 'AMT based on Source Separation',
+    info: 'Fall 2021',
+    info2:
+      'An automatic music transcription (AMT) method was used on the SOUSTA corpus - a dataset of traditional Cretan dance tunes. Both the original audio recordings from the dataset and a source separated audio, where the instrument playing the main melody had been separated, were transcribed. The purpose of the project was to investigate the impact that source separation had on the accuracy of the transcribed main melody.',
+    url:
+      'https://docs.google.com/presentation/d/1yGlxOODeBig6FfhQ-tqZG8-fNSLXlfhNHm6epFNu_Ww/edit#slide=id.p',
+    repo: 'https://gist.github.com/kiki0805/50cbfc8eb668661b5651da14bbd9e7bf',
   },
   {
     id: nanoid(),
