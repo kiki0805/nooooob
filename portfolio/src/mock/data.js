@@ -28,10 +28,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'oculus.jpg',
+    img: 'vr-sound-energy.jpg',
+    title: 'Sound for Energy in VR',
+    info: 'Spring 2022, ONGOING',
+    info2:
+      'The project simulates a household environment in virtual reality (VR) and conducts experiments to see how sonic interaction influences people in aspects of sustainability. As a result, sonification with three types of sound as well as preliminary qualitative and quantitative evaluations are determined, shifting related studies from the physical field to the virtual environment.',
+    repo: 'https://github.com/kiki0805/vr-sound-sustainability',
+  },
+  {
+    id: nanoid(),
+    img: 'BlockInteraction.png',
     title: 'Future of Work',
-    info: 'Winter 2021, ONGING',
-    info2: 'A VR implementation for visual coding.',
+    info: 'Winter 2021',
+    info2:
+      'Our design goals were to let software engineers program snippets of JavaScript code in an efficient manner, while reaping the health benefits of non-sedentary interaction and enjoying the experience. We evaluated the prototype using six participantsin, measuring their completion rate and time of a programming task, as well as their metabolic rate and number of steps. To enable free fully-body movement we used Virtual Reality (VR) to map out a virtual 3D environment. To enable programming, we implemented a custom version of the visual programming language (VPL) Blockly.',
+    repo: 'https://github.com/marthed/VR-VPL',
   },
   {
     id: nanoid(),
@@ -126,11 +137,12 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'HCIMouse.png',
-    title: 'Turning Mice into Tangibles',
-    info: 'Submission to CHI 2022',
+    title:
+      'Enabling Tangible Interaction on Non-touch Displays with Optical Mouse Sensor and Visible Light Communication',
+    info: 'ACM CHI 2022',
     info2:
       'Centaur, is a system enables touch interaction for non-touch screen computers, e.g., most desktop computers. Centaur uses optical mice as an agent to perform touch actions. It supports tapping, dragging and multi-people touching, which brings new opportunities to conventional mouse-based interaction. Results show the location resolution is 12mm2, the positioning latency is 0.41 s on average and 0.76 s for 99% cases.',
-    url: 'https://youtu.be/BysZTkLBfgo',
+    url: 'https://programs.sigchi.org/chi/2022/program/content/71941',
     repo: 'https://github.com/kiki0805/HCI-Mouse',
   },
 ];
